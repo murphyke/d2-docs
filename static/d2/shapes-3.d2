@@ -1,41 +1,92 @@
 # Shape catalog of standard shapes
 
+classes: {
+  hidden: {
+    label: ""
+    style.fill: transparent
+    style.stroke-width: 0
+  }
+}
+
 style.fill: transparent
 
-grid-rows: 4
-grid-columns: 4
-rectangle.shape: rectangle
-square.shape: square
-page.shape: page
-parallelogram.shape: parallelogram
-document.shape: document
-cylinder.shape: cylinder
-queue.shape: queue
-package.shape: package
-step.shape: step
-callout.shape: callout
-stored_data.shape: stored_data
-person.shape: person
-diamond.shape: diamond
-oval.shape: oval
-circle.shape: circle
-hexagon.shape: hexagon
-cloud.shape: cloud
+grid-rows: 5
 
-# Color fixups to ensure all shapes have white fill
-# TODO change this to use globs when implemented
-parallelogram.style.fill: white
-queue.style.fill: white
-person.style.fill: white
-diamond.style.fill: white
-hexagon.style.fill: white
-page.style.fill: white
-document.style.fill: white
-cylinder.style.fill: white
-package.style.fill: white
-step.style.fill: white
-stored_data.style.fill: white
-square.style.fill: white
-oval.style.fill: white
-circle.style.fill: white
-rectangle.style.fill: white
+one: {
+  class: hidden
+  rectangle.shape: rectangle
+  square.shape: square
+  page.shape: page
+  parallelogram.shape: parallelogram
+
+  # Color fixups to ensure all shapes have white fill
+  # TODO change this to use globs when implemented
+  rectangle.style.fill: white
+  square.style.fill: white
+  page.style.fill: white
+  parallelogram.style.fill: white
+
+  rectangle.style.font-size: 34
+  square.style.font-size: 34
+  page.style.font-size: 34
+  parallelogram.style.font-size: 34
+}
+
+two: {
+  class: hidden
+  document.shape: document
+  cylinder.shape: cylinder
+  queue.shape: queue
+  package.shape: package
+
+  document.style.fill: white
+  cylinder.style.fill: white
+  queue.style.fill: white
+  package.style.fill: white
+
+  document.style.font-size: 34
+  cylinder.style.font-size: 34
+  queue.style.font-size: 34
+  package.style.font-size: 34
+}
+
+three: {
+  class: hidden
+  step.shape: step
+  callout.shape: callout
+  stored_data.shape: stored_data
+  person.shape: person
+
+  step.style.fill: white
+  stored_data.style.fill: white
+  person.style.fill: white
+
+  step.style.font-size: 34
+  callout.style.font-size: 34
+  stored_data.style.font-size: 34
+  person.style.font-size: 34
+}
+
+four: {
+  class: hidden
+  diamond.shape: diamond
+  oval.shape: oval
+  circle.shape: circle
+  hexagon.shape: hexagon
+
+  diamond.style.fill: white
+  oval.style.fill: white
+  circle.style.fill: white
+  hexagon.style.fill: white
+
+  diamond.style.font-size: 34
+  oval.style.font-size: 34
+  circle.style.font-size: 34
+  hexagon.style.font-size: 34
+}
+
+five: {
+  class: hidden
+  cloud.shape: cloud
+  cloud.style.font-size: 34
+}
